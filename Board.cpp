@@ -2,10 +2,11 @@
 //// ----------------------------------------------------------------------*80*
 
 #include <iostream>
-#include <cstdlib>
 #include "common.h"
 #include "Location.h"
-
-#include "ChessSet.h"
 #include "Board.h"
+
+#include "Piece.h"
+#include "Pawn.h"
+#include "ChessSet.h"
 using namespace std;

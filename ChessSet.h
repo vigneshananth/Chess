@@ -3,16 +3,17 @@
 #ifndef CHESS_SET_H
 #define CHESS_SET_H
 
-
 class ChessSet {
-public:
-  // Pawn pawns[8];
+private: 
+  Pawn pawns;
   // Knight knights[2];
   // Rook rooks[2];
-  
+
+public:
+
   PieceColor color;
 
-  // ChessSet();
+  ChessSet();
   // void setColor(PieceColor color){};
   // void initializeLocations(PieceColor color){};
 
