@@ -7,9 +7,9 @@
 #include "Board.h"
 #include "Piece.h"
 #include "Pawn.h"
-// #include "Rook.h"
-// #include "Knight.h"
-
+#include "Rook.h"
+#include "Knight.h"
+#include "Queen.h"
 #include "ChessSet.h"
 using namespace std;
 

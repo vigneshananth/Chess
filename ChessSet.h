@@ -4,10 +4,12 @@
 #define CHESS_SET_H
 
 class ChessSet {
+
 private: 
-  Pawn pawns;
-  // Knight knights[2];
-  // Rook rooks[2];
+  Pawn Pawns[8];
+  Knight knights[2];
+  Rook rooks[2];
+  Queen queen;
 
 public:
 
