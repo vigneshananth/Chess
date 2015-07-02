@@ -2,10 +2,8 @@
 //// ----------------------------------------------------------------------*80*1
 
 #include <iostream>
-#include <cstdlib>
 #include "common.h"
 #include "Location.h"
-#include "ChessSet.h"
 #include "Board.h"
 #include "Piece.h"
 #include "Knight.h"

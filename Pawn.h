@@ -1,5 +1,5 @@
 // This file provides an implementation for the standard Chess pawn. 
-//// ----------------------------------------------------------------------*80*1
+//// ----------------------------------------------------------------------*80*
 
 #ifndef PAWN_H
 #define PAWN_H

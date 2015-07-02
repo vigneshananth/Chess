@@ -1,5 +1,5 @@
 // This file provides an implementation for the standard Chess Knight. 
-//// ----------------------------------------------------------------------*80*1
+//// ----------------------------------------------------------------------*80*
 
 #ifndef KNIGHT_H
 #define KNIGHT_H
