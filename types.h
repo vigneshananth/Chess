@@ -1,0 +1,1 @@
+// This file lists the different types of emunerations and structures used.
