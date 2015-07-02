@@ -8,5 +8,7 @@
 
 #include "Piece.h"
 #include "Pawn.h"
+#include "Knight.h"
+#include "Rook.h"
 #include "ChessSet.h"
 using namespace std;
