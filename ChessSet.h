@@ -10,7 +10,8 @@ private:
   Knight knights[2];
   Rook rooks[2];
   Queen queen;
-
+  Bishop bishops[2];
+  King king;
 public:
 
   PieceColor color;

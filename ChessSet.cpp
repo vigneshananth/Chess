@@ -10,6 +10,8 @@
 #include "Rook.h"
 #include "Knight.h"
 #include "Queen.h"
+#include "Bishop.h"
+#include "King.h"
 #include "ChessSet.h"
 using namespace std;
 

@@ -4,13 +4,13 @@
 #ifndef BISHOP_H
 #define BISHOP_H
 
-class Queen : protected Piece {
+class Bishop : protected Piece {
 
   pieceLocation location;
 
   public:
 
-  Queen(): Piece(QUEEN,TRUE,WHITE,new pieceLocation(0,0)){
+  Bishop(): Piece(BISHOP,TRUE,WHITE,new pieceLocation(0,0)){
 
   }
   

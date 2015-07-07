@@ -11,5 +11,7 @@
 #include "Knight.h"
 #include "Rook.h"
 #include "Queen.h"
+#include "Bishop.h"
+#include "King.h"
 #include "ChessSet.h"
 using namespace std;
