@@ -13,26 +13,30 @@ Pawn::Pawn() : Piece (PAWN,TRUE,WHITE,new pieceLocation(0,0)){
   firstMove = TRUE;
 }
 
-boolean Pawn::isMoveValid(pieceLocation dest,Board board) {
+boolean Pawn::isMoveValid(pieceLocation dest, 
+                          int boardLength, 
+                          PieceColor pieceAtDestColor) {
 
-  if(!isLocationValid(board.getLength(),dest)) {
+  if(!isLocationValid(boardLength,dest)) {
     cout << "Destination is not within limits of board";
     return FALSE;
   }
 
   if(areLocationsSame(dest,locationOnBoard)) {
     cout << "Destination can't be same as current location";
+    FALSE;
   }
+
+  if(pieceAtDestColor == color) {
+    cout << "Piece of same color at location";
+    return FALSE;
+  }
+
   // If the pawn is capturing a piece, it can move diagonally.
-  if(!board.isLocationEmpty(dest)) {
+  if(pieceAtDestColor != EMPTY &&
+     pieceAtDestColor != color) {
 
-    if(board.getPieceColor(dest) == color){
-      cout <<"Destination has another piece of the same set.";
-      return FALSE;  
-    }
 
-    // Location contains an opposing piece. Get rid of it, put ourselves there.
-    cout << "Location contains opponent piece " << board.getPieceType(dest);
 
     // The following code needs to be in a function called after isMoveValid.
 

@@ -14,7 +14,10 @@ class Bishop : protected Piece {
 
   }
   
-  boolean isMoveValid(pieceLocation dest,Board board);
+  boolean isMoveValid(pieceLocation dest,
+              		  int boardLength,
+              		  PieceColor pieceAtDestColor);
+
 };
 
-#endif // QUEEN_H
+#endif // BISHOP_H

@@ -31,6 +31,8 @@ public:
   void AddOrRemovePieceFromBoard(boolean add);
   void setPieceLocation(pieceLocation newLocation);
   boolean getPieceLocation(pieceLocation *returnPieceLocation);
-  virtual boolean isMoveValid(pieceLocation dest,Board board) = 0;
+  virtual boolean isMoveValid(pieceLocation dest,
+                              int boardLength,
+                              PieceColor pieceAtDestColor) = 0;
 };
 #endif //PIECE_H

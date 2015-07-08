@@ -14,7 +14,10 @@ class King : protected Piece {
 
   }
   
-  boolean isMoveValid(pieceLocation dest,Board board);
+  boolean isMoveValid(pieceLocation dest,
+              int boardLength,
+              PieceColor pieceAtDestColor);
+
 };
 
-#endif // King_H
+#endif // KING_H

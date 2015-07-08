@@ -10,7 +10,9 @@ class Rook : protected Piece {
 
   Rook();
 
-  boolean isMoveValid(pieceLocation dest,Board board);
+  boolean isMoveValid(pieceLocation dest,
+  					  int boardlength,
+  					  PieceColor pieceAtDestColor);
 };
 
 #endif //ROOK_H

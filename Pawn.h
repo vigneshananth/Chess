@@ -12,7 +12,9 @@ boolean firstMove;
 public:
 
   Pawn();
-  boolean isMoveValid(pieceLocation dest,Board board);
+  boolean isMoveValid(pieceLocation dest,
+              int boardLength,
+              PieceColor pieceAtDestColor);
 };
 
 #endif // PAWN_H
