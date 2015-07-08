@@ -6,7 +6,6 @@
 #include <iostream>
 #include "common.h"
 #include "Location.h"
-#include "Board.h"
 #include "Piece.h"
 using namespace std;
 

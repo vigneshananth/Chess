@@ -4,14 +4,13 @@
 #include <iostream>
 #include "common.h"
 #include "Location.h"
-#include "Board.h"
-
 #include "Piece.h"
 #include "Pawn.h"
-#include "Knight.h"
 #include "Rook.h"
+#include "Knight.h"
 #include "Queen.h"
 #include "Bishop.h"
 #include "King.h"
 #include "ChessSet.h"
+#include "Board.h"
 using namespace std;

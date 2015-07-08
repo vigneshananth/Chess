@@ -7,7 +7,7 @@
 class Board {
   protected:
     int length;
-    // ChessSet set[2];
+    ChessSet set[2];
   public:
     int getLength(void) { return length; }
     PieceColor getPieceColor(pieceLocation location) { return WHITE;}

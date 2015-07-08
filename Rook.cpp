@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include "common.h"
 #include "Location.h"
-#include "Board.h"
 #include "Piece.h"
 #include "Rook.h"
 using namespace std;

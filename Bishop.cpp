@@ -4,7 +4,6 @@
 #include <iostream>
 #include "common.h"
 #include "Location.h"
-#include "Board.h"
 #include "Piece.h"
 #include "Bishop.h"
 using namespace std;
