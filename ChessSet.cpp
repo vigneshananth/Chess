@@ -14,13 +14,36 @@
 #include "ChessSet.h"
 using namespace std;
 
-ChessSet::ChessSet() {
-  // color = WHITE;
-  // int i;
-  // for(i=0;i<8;i++){
-  //   pawns[i].setLocation(new Location(0,0));
-  // }
-  // for(i=0;i<2;i++) {
-  //   knights[i].setLocation(new Location(0,0));
-  // }
+ChessSet::ChessSet(PieceColor color) {
+  color = color;
+  int i,pawnOffset = 0, pieceOffset = 0;
+  if(color == WHITE) {
+    pawnOffset = 1;
+    pieceOffset = 0;
+  } else if(color == BLACK) {
+    pawnOffset = 6;
+    pieceOffset = 7;
+  } else {
+    cout << "INCORRECT COLOR. Asserting";
+
+  }
+  
+  for(i=0;i<8;i++){
+    pawns[i].setPieceLocation(new pieceLocation(pawnOffset,i));
+  }
+
+  rooks[0].setPieceLocation(new pieceLocation(pieceOffset,0));
+  rooks[1].setPieceLocation(new pieceLocation(pieceOffset,7));
+
+  knights[0].setPieceLocation(new pieceLocation(pieceOffset,1));
+  knights[1].setPieceLocation(new pieceLocation(pieceOffset,6));
+
+  bishops[0].setPieceLocation(new pieceLocation(pieceOffset,2));
+  bishops[1].setPieceLocation(new pieceLocation(pieceOffset,5));
+
+  queen.setPieceLocation(new pieceLocation(pieceOffset,3));
+
+  king.setPieceLocation(new pieceLocation(pieceOffset,4));
+
 }
+

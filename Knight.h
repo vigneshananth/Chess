@@ -4,7 +4,7 @@
 #ifndef KNIGHT_H
 #define KNIGHT_H
 
-class Knight : protected Piece {
+class Knight : public Piece {
 
   pieceLocation location;
 

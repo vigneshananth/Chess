@@ -4,7 +4,7 @@
 #ifndef BISHOP_H
 #define BISHOP_H
 
-class Bishop : protected Piece {
+class Bishop : public Piece {
 
   pieceLocation location;
 

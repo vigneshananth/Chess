@@ -14,6 +14,7 @@ public:
     x = 0;
     y = 0;
   }
+  
   pieceLocation(int newX,int newY) {
     x = newX;
     y = newY;
@@ -32,6 +33,11 @@ public:
   void setPieceLocation(const pieceLocation setPieceLocation){
     x = setPieceLocation.x;
     y = setPieceLocation.y;
+  }
+
+  void setPieceLocation(pieceLocation *setPieceLocation){
+    x = setPieceLocation->x;
+    y = setPieceLocation->y;
   }
 
   int getXValue(){

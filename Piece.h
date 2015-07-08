@@ -29,6 +29,7 @@ public:
   void setPieceType(PieceType newType);
   boolean isPieceOnBoard(void);
   void AddOrRemovePieceFromBoard(boolean add);
+  void setPieceLocation(pieceLocation *newLocation);
   void setPieceLocation(pieceLocation newLocation);
   boolean getPieceLocation(pieceLocation *returnPieceLocation);
   virtual boolean isMoveValid(pieceLocation dest,

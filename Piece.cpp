@@ -34,6 +34,11 @@ void Piece::AddOrRemovePieceFromBoard(boolean add) {
   isOnBoard = add;
 }
 
+void Piece::setPieceLocation(pieceLocation *newLocation) {
+  locationOnBoard.setPieceLocation(newLocation);
+  AddOrRemovePieceFromBoard(TRUE);
+}
+
 void Piece::setPieceLocation(pieceLocation newLocation) {
   locationOnBoard.setPieceLocation(newLocation);
   AddOrRemovePieceFromBoard(TRUE);

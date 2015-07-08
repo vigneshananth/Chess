@@ -4,7 +4,7 @@
 #ifndef ROOK_H
 #define ROOK_H
 
-class Rook : protected Piece {
+class Rook : public Piece {
 
   public:
 

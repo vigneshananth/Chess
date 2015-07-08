@@ -6,7 +6,7 @@
 class ChessSet {
 
 private: 
-  Pawn Pawns[8];
+  Pawn pawns[8];
   Knight knights[2];
   Rook rooks[2];
   Queen queen;
@@ -16,9 +16,8 @@ public:
 
   PieceColor color;
 
-  ChessSet();
+  ChessSet(PieceColor color);
   // void setColor(PieceColor color){};
-  // void initializeLocations(PieceColor color){};
 
 };
 

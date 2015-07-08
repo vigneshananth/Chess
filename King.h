@@ -4,7 +4,7 @@
 #ifndef King_H
 #define King_H
 
-class King : protected Piece {
+class King : public Piece {
 
   pieceLocation location;
 

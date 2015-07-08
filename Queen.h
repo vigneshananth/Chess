@@ -4,7 +4,7 @@
 #ifndef QUEEN_H
 #define QUEEN_H
 
-class Queen : protected Piece {
+class Queen : public Piece {
 
   pieceLocation location;
 
