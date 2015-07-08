@@ -15,8 +15,10 @@ private:
 public:
 
   PieceColor color;
+  ChessSet();
 
   ChessSet(PieceColor color);
+  void setPieceLocatons(PieceColor color, uint8_t **grid);
   // void setColor(PieceColor color){};
 
 };
